@@ -17,8 +17,8 @@
       }
     </style>
   </head>
-  <body class="bg-white text-slate-800 dark:bg-slate-900 dark:text-slate-100">
-    <header class="border-b dark:border-slate-800">
+  <body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-50">
+    <header class="border-b border-slate-200 dark:border-slate-800">
       <div
         class="container mx-auto px-6 py-6 flex items-center justify-between"
       >
@@ -26,45 +26,66 @@
           <img
             src="tomas.png"
             alt="avatar"
-            class="w-12 h-12 rounded-full ring-2 ring-slate-200 dark:ring-slate-700"
+            class="w-12 h-12 rounded-full ring-2 ring-cyan-500 dark:ring-cyan-400"
           />
           <div>
-            <a href="#hero" class="font-bold text-lg">Tomas Sullivan</a>
-            <div class="text-sm text-slate-500 dark:text-slate-400">
+            <a
+              href="#hero"
+              class="font-bold text-xl text-cyan-700 dark:text-cyan-400"
+              >Tomas Sullivan</a
+            >
+            <div class="text-sm text-slate-600 dark:text-slate-300">
               AI/LLM Engineer • Python • OpenAI API
             </div>
           </div>
         </div>
         <div class="flex items-center gap-4">
-          <nav class="hidden md:flex gap-4 text-sm">
-            <a href="#about" class="hover:underline">About</a>
-            <a href="#projects" class="hover:underline">Projects</a>
-            <a href="#skills" class="hover:underline">Skills</a>
-            <a href="#contact" class="hover:underline">Contact</a>
+          <nav class="hidden md:flex gap-6 text-base">
+            <a
+              href="#about"
+              class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-200"
+              >About</a
+            >
+            <a
+              href="#projects"
+              class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-200"
+              >Projects</a
+            >
+            <a
+              href="#skills"
+              class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-200"
+              >Skills</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-200"
+              >Contact</a
+            >
           </nav>
         </div>
       </div>
     </header>
 
-    <main class="container mx-auto px-6 py-12">
-      <section id="hero" class="grid md:grid-cols-2 gap-8 items-center">
+    <main class="container mx-auto px-6 py-16">
+      <section id="hero" class="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 class="text-4xl font-extrabold">AI Engineer</h1>
-          <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
+          <h1
+            class="text-5xl font-extrabold leading-tight text-slate-900 dark:text-slate-50"
+          >
+            AI Engineer
+          </h1>
+          <p
+            class="mt-5 text-xl text-slate-700 dark:text-slate-200 leading-relaxed"
+          >
             An AI engineer and project manager based in Japan who both uses
             pretrained LLMs and training custom ML models to solve real world
-            problems faced by businesses in Japan.
+            problems faced by businesses in businesses in Japan.
           </p>
-          <div class="mt-6 flex gap-3">
+          <div class="mt-8 flex gap-4">
             <a
               href="#projects"
-              class="inline-block px-4 py-2 bg-slate-800 text-white rounded hover:bg-slate-700"
+              class="inline-block px-7 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow-md hover:bg-cyan-700 transform hover:scale-105 transition-all duration-200"
               >View Projects</a
-            >
-            <a
-              href="resume_20251122.pdf"
-              class="inline-block px-4 py-2 border rounded"
-              >Resume</a
             >
           </div>
         </div>
@@ -72,14 +93,18 @@
           <img
             src="tomas.png"
             alt="hero"
-            class="w-64 h-64 rounded-lg shadow-lg object-cover"
+            class="w-72 h-72 rounded-full shadow-xl object-cover ring-4 ring-cyan-500 dark:ring-cyan-400"
           />
         </div>
       </section>
 
-      <section id="about" class="mt-16">
-        <h2 class="text-2xl font-semibold">About</h2>
-        <p class="mt-4 text-slate-600 dark:text-slate-300">
+      <section id="about" class="mt-20">
+        <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-50">
+          About
+        </h2>
+        <p
+          class="mt-5 text-lg text-slate-700 dark:text-slate-200 leading-relaxed"
+        >
           I'm a software engineer specializing in AI/ML development, large
           language models, and data-driven solutions. I have both led teams of
           engineers as a project manager and trained and deployed ML models as a
@@ -90,133 +115,310 @@
         </p>
       </section>
 
-      <section id="projects" class="mt-12">
-        <h2 class="text-2xl font-semibold">Projects</h2>
-        <p class="text-sm text-slate-500 mt-2">
+      <section id="projects" class="mt-20">
+        <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-50">
+          Projects
+        </h2>
+        <p class="text-lg text-slate-600 dark:text-slate-300 mt-4">
           Selected projects from my work and open-source.
         </p>
 
-        <div class="mt-6 grid sm:grid-cols-2 gap-6">
+        <div class="mt-10 grid md:grid-cols-2 gap-8">
           <!-- Project 1: Japan House Price Predictor -->
-          <article class="border rounded-lg p-4 hover:shadow-lg">
-            <h3 class="font-bold">Japan House Price Predictor</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mt-2">
+          <article
+            class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+          >
+            <h3 class="font-bold text-xl text-cyan-700 dark:text-cyan-400">
+              Japan House Price Predictor
+            </h3>
+            <p
+              class="text-base text-slate-700 dark:text-slate-200 mt-3 leading-relaxed"
+            >
               Trained a supervised ML model to predict residential house prices
               across Japan, combining listing, geographic, and public land-price
               datasets to improve valuation accuracy and inform pricing
               strategies.
             </p>
-            <div class="mt-3 text-xs text-slate-500">
-              Tech: Python · Pandas · scikit-learn · NumPy · Seaborn · Jupyter
-              Notebook · Google Colab ·
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Python</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Pandas</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >scikit-learn</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >NumPy</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Seaborn</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Jupyter Notebook</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Google Colab</span
+              >
             </div>
-            <div class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              <strong>Approach:</strong> Conducted data cleaning and
-              preparation, selected high-correlation features, and engineered
-              unique features such as district names and building ages.
-              Performed model selection and hyperparameter tuning to maximize
-              performance.
+            <div class="mt-4 text-base text-slate-700 dark:text-slate-200">
+              <strong class="text-cyan-600 dark:text-cyan-400"
+                >Approach:</strong
+              >
+              Conducted data cleaning and preparation, selected high-correlation
+              features, and engineered unique features such as district names
+              and building ages. Performed model selection and hyperparameter
+              tuning to maximize performance.
             </div>
-            <div class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              <strong>Outcome:</strong> Model significantly outperformed a
-              simple baseline with r2 score of 0.58 (median-price predictor),
-              provided interpretable feature importances (land area, proximity
-              to stations, year built etc), and was wrapped into a small API for
-              quick valuation lookups.
+            <div class="mt-3 text-base text-slate-700 dark:text-slate-200">
+              <strong class="text-cyan-600 dark:text-cyan-400">Outcome:</strong>
+              Model significantly outperformed a simple baseline with r2 score
+              of 0.58 (median-price predictor), provided interpretable feature
+              importances (land area, proximity to stations, year built etc),
+              and was wrapped into a small API for quick valuation lookups.
             </div>
-            <div class="mt-4 flex gap-2">
+            <div class="mt-6 flex flex-wrap gap-3">
               <a
                 href="https://github.com/tomPlus353/house_price_api"
-                class="text-sm text-sky-600 hover:underline"
+                class="inline-block px-4 py-2 bg-cyan-100 dark:bg-slate-700 text-cyan-700 dark:text-cyan-300 rounded-lg hover:bg-cyan-200 dark:hover:bg-slate-600 transition-colors duration-200"
                 >Repo</a
               >
               <a
                 href="https://tomplus353.github.io/house-price-api-tester"
-                class="text-sm text-sky-600 hover:underline"
+                class="inline-block px-4 py-2 bg-cyan-100 dark:bg-slate-700 text-cyan-700 dark:text-cyan-300 rounded-lg hover:bg-cyan-200 dark:hover:bg-slate-600 transition-colors duration-200"
                 >Demo</a
               >
               <a
                 href="https://drive.google.com/drive/folders/1pkjeLuQ0q2xvj-c1hvedczNS_ZGKQYKU?usp=sharing"
-                class="text-sm text-sky-600 hover:underline"
+                class="inline-block px-4 py-2 bg-cyan-100 dark:bg-slate-700 text-cyan-700 dark:text-cyan-300 rounded-lg hover:bg-cyan-200 dark:hover:bg-slate-600 transition-colors duration-200"
                 >Weights & Assets</a
               >
             </div>
           </article>
 
           <!-- Project 2: PDF→CSV Real Estate Conversion Tool -->
-          <article class="border rounded-lg p-4 hover:shadow-lg">
-            <h3 class="font-bold">PDF→CSV不動産自動変換ツール</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mt-2">
+          <article
+            class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+          >
+            <h3 class="font-bold text-xl text-cyan-700 dark:text-cyan-400">
+              PDF→CSV不動産自動変換ツール
+            </h3>
+            <p
+              class="text-base text-slate-700 dark:text-slate-200 mt-3 leading-relaxed"
+            >
               Developed an AI-powered tool to automatically extract real estate
               property information from multiple PDFs and convert it into CSV
               format. The converted data is then automatically uploaded to a
               database, significantly reducing manual data entry for clients.
             </p>
-            <div class="mt-3 text-xs text-slate-500">
-              Tech: Next.js, Python, TensorFlow, Faiss, Flask, TypeScript, React
-              Native, Express.js, Zod, Prisma, tRPC, Monorepo, Mantine
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Next.js</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Python</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >TensorFlow</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Faiss</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Flask</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >TypeScript</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >React Native</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Express.js</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Zod</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Prisma</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >tRPC</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Monorepo</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Mantine</span
+              >
             </div>
-            <div class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              <strong>Role:</strong> AI/LLM Engineer<br />
-              <strong>Timeline:</strong> November 2024 – February 2025
+            <div class="mt-4 text-base text-slate-700 dark:text-slate-200">
+              <strong class="text-cyan-600 dark:text-cyan-400">Role:</strong>
+              AI/LLM Engineer<br />
+              <strong class="text-cyan-600 dark:text-cyan-400"
+                >Timeline:</strong
+              >
+              November 2024 – February 2025
             </div>
-            <div class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              <strong>Outcome:</strong> Automated the extraction and conversion
-              process, reducing manual data entry efforts for clients and
-              improving operational efficiency.
+            <div class="mt-3 text-base text-slate-700 dark:text-slate-200">
+              <strong class="text-cyan-600 dark:text-cyan-400">Outcome:</strong>
+              Automated the extraction and conversion process, reducing manual
+              data entry efforts for clients and improving operational
+              efficiency.
             </div>
           </article>
 
           <!-- Project 3: Test Case Generation Solution -->
-          <article class="border rounded-lg p-4 hover:shadow-lg">
-            <h3 class="font-bold">Test Case Generation Solution</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mt-2">
+          <article
+            class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+          >
+            <h3 class="font-bold text-xl text-cyan-700 dark:text-cyan-400">
+              Test Case Generation Solution
+            </h3>
+            <p
+              class="text-base text-slate-700 dark:text-slate-200 mt-3 leading-relaxed"
+            >
               Implemented a solution to automatically generate test cases by
               filling out templates in Google Sheets using the OpenAI API. The
               solution processed spec sheets from another Google Sheet to create
               detailed, structured test cases.
             </p>
-            <div class="mt-3 text-xs text-slate-500">
-              Tech: OpenAI API · Google Sheets API
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >OpenAI API</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Google Sheets API</span
+              >
             </div>
-            <div class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              <strong>Role:</strong> AI/LLM Engineer<br />
-              <strong>Timeline:</strong> August 2025 – September 2025
+            <div class="mt-4 text-base text-slate-700 dark:text-slate-200">
+              <strong class="text-cyan-600 dark:text-cyan-400">Role:</strong>
+              AI/LLM Engineer<br />
+              <strong class="text-cyan-600 dark:text-cyan-400"
+                >Timeline:</strong
+              >
+              August 2025 – September 2025
             </div>
-            <div class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              <strong>Outcome:</strong> Automated the creation of test cases,
-              reducing the time to create tests by about 50% and allowing more
-              time for reviewing and refining test cases.
+            <div class="mt-3 text-base text-slate-700 dark:text-slate-200">
+              <strong class="text-cyan-600 dark:text-cyan-400">Outcome:</strong>
+              Automated the creation of test cases, reducing the time to create
+              tests by about 50% and allowing more time for reviewing and
+              refining test cases.
             </div>
           </article>
 
           <!-- Project 4: Mobile App Development -->
-          <article class="border rounded-lg p-4 hover:shadow-lg">
-            <h3 class="font-bold">酒ボトル画像認識アプリの開発</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mt-2">
+          <article
+            class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+          >
+            <h3 class="font-bold text-xl text-cyan-700 dark:text-cyan-400">
+              酒ボトル画像認識アプリの開発
+            </h3>
+            <p
+              class="text-base text-slate-700 dark:text-slate-200 mt-3 leading-relaxed"
+            >
               Developed a mobile app that uses the camera and AI to recognize
               products. Developed the management dashboard for the API service
               and the mobile app.
             </p>
-            <div class="mt-3 text-xs text-slate-500">
-              Tech: Python, Flask, TensorFlow, TypeScript, Next.js, React
-              Native, Tailwind, MySQL, Express.js, Prisma, REST APIs, Expo
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Python</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Flask</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >TensorFlow</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >TypeScript</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Next.js</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >React Native</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Tailwind</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >MySQL</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Express.js</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Prisma</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >REST APIs</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Expo</span
+              >
             </div>
-            <div class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              <strong>Role:</strong> Project Manager<br />
-              <strong>Timeline:</strong> April 2023 – December 2023
+            <div class="mt-4 text-base text-slate-700 dark:text-slate-200">
+              <strong class="text-cyan-600 dark:text-cyan-400">Role:</strong>
+              Project Manager<br />
+              <strong class="text-cyan-600 dark:text-cyan-400"
+                >Timeline:</strong
+              >
+              April 2023 – December 2023
             </div>
-            <div class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              <strong>Outcome:</strong> Developed a mobile app with image
-              recognition capabilities and a management dashboard for the API
-              service.
+            <div class="mt-3 text-base text-slate-700 dark:text-slate-200">
+              <strong class="text-cyan-600 dark:text-cyan-400">Outcome:</strong>
+              Developed a mobile app with image recognition capabilities and a
+              management dashboard for the API service.
             </div>
           </article>
 
           <!-- Project 5: Japanese Ereader with Integrated AI Language Learning Support -->
-          <article class="border rounded-lg p-4 hover:shadow-lg">
-            <h3 class="font-bold">Japanese Ereader and AI Language Learning</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mt-2">
+          <article
+            class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+          >
+            <h3 class="font-bold text-xl text-cyan-700 dark:text-cyan-400">
+              Japanese Ereader and AI Language Learning
+            </h3>
+            <p
+              class="text-base text-slate-700 dark:text-slate-200 mt-3 leading-relaxed"
+            >
               A fully integrated Japanese eReader and AI language learning tool
               designed to support intensive reading practice on difficult
               Japanese texts. Allows users to turn any Japanese text into
@@ -224,26 +426,61 @@
               explanations and quizzes generated by AI. Text can be copied into
               app or imported from an image or even from the user's camera.
             </p>
-            <div class="mt-3 text-xs text-slate-500">
-              Tech: Next.js · TypeScript · kuromoji.js · NextAuth.js · Prisma ·
-              tRPC · Tailwind CSS · React
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Next.js</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >TypeScript</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >kuromoji.js</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >NextAuth.js</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Prisma</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >tRPC</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >Tailwind CSS</span
+              >
+              <span
+                class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1 rounded-full text-xs font-medium"
+                >React</span
+              >
             </div>
-            <div class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              <strong>Role:</strong> AI/LLM Engineer<br />
-              <strong>Timeline:</strong> April 2025 - Present
+            <div class="mt-4 text-base text-slate-700 dark:text-slate-200">
+              <strong class="text-cyan-600 dark:text-cyan-400">Role:</strong>
+              AI/LLM Engineer<br />
+              <strong class="text-cyan-600 dark:text-cyan-400"
+                >Timeline:</strong
+              >
+              April 2025 - Present
             </div>
-            <div class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              <strong>Outcome:</strong> Describe the outcome of the project.
+            <div class="mt-3 text-base text-slate-700 dark:text-slate-200">
+              <strong class="text-cyan-600 dark:text-cyan-400">Outcome:</strong>
+              Describe the outcome of the project.
             </div>
-            <div class="mt-4 flex gap-2">
+            <div class="mt-6 flex flex-wrap gap-3">
               <a
                 href="https://github.com/tomPlus353/vocab-sheet-gen-ai"
-                class="text-sm text-sky-600 hover:underline"
+                class="inline-block px-4 py-2 bg-cyan-100 dark:bg-slate-700 text-cyan-700 dark:text-cyan-300 rounded-lg hover:bg-cyan-200 dark:hover:bg-slate-600 transition-colors duration-200"
                 >Repo</a
               >
               <a
                 href="https://vocab-sheet-gen-ai.vercel.app"
-                class="text-sm text-sky-600 hover:underline"
+                class="inline-block px-4 py-2 bg-cyan-100 dark:bg-slate-700 text-cyan-700 dark:text-cyan-300 rounded-lg hover:bg-cyan-200 dark:hover:bg-slate-600 transition-colors duration-200"
                 >Demo</a
               >
             </div>
@@ -251,52 +488,72 @@
         </div>
       </section>
 
-      <section id="skills" class="mt-12">
-        <h2 class="text-2xl font-semibold">Skills</h2>
+      <section id="skills" class="mt-20">
+        <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-50">
+          Skills
+        </h2>
         <div
-          class="mt-4 grid sm:grid-cols-3 gap-4 text-sm text-slate-600 dark:text-slate-300"
+          class="mt-8 grid md:grid-cols-3 gap-8 text-base text-slate-700 dark:text-slate-200"
         >
           <div>
-            <h4 class="font-semibold">Machine Learning Libraries</h4>
-            <ul class="mt-2 space-y-1">
-              <li>NumPy · Pandas · TensorFlow · Keras</li>
+            <h4 class="font-semibold text-xl text-cyan-600 dark:text-cyan-400">
+              Machine Learning Libraries
+            </h4>
+            <ul class="mt-3 space-y-2">
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>TensorFlow</li>
+              <li>Keras</li>
               <li>scikit-learn</li>
             </ul>
           </div>
           <div>
-            <h4 class="font-semibold">AI Algorithms</h4>
-            <ul class="mt-2 space-y-1">
-              <li>Regression · K-Nearest Neighbors</li>
+            <h4 class="font-semibold text-xl text-cyan-600 dark:text-cyan-400">
+              AI Algorithms
+            </h4>
+            <ul class="mt-3 space-y-2">
+              <li>Regression</li>
+              <li>K-Nearest Neighbors</li>
               <li>Neural Networks</li>
             </ul>
           </div>
           <div>
-            <h4 class="font-semibold">LLMs & Tools</h4>
-            <ul class="mt-2 space-y-1">
-              <li>Gemini API · Genkit · OpenAI API</li>
-              <li>MCP · Windsurf · Copilot</li>
+            <h4 class="font-semibold text-xl text-cyan-600 dark:text-cyan-400">
+              LLMs & Tools
+            </h4>
+            <ul class="mt-3 space-y-2">
+              <li>Gemini API</li>
+              <li>Genkit</li>
+              <li>OpenAI API</li>
+              <li>MCP</li>
+              <li>Windsurf</li>
+              <li>Copilot</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="mt-12">
-        <h2 class="text-2xl font-semibold">Contact</h2>
-        <p class="mt-2 text-slate-600 dark:text-slate-300">
+      <section id="contact" class="mt-20">
+        <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-50">
+          Contact
+        </h2>
+        <p class="mt-5 text-lg text-slate-700 dark:text-slate-200">
           Email:
-          <a href="mailto:tomas.sullivan.cv@gmail.com" class="text-sky-600"
+          <a
+            href="mailto:tomas.sullivan.cv@gmail.com"
+            class="text-cyan-600 hover:underline dark:text-cyan-400"
             >tomas.sullivan.cv@gmail.com</a
           >
         </p>
-        <div class="mt-4">
+        <div class="mt-6 flex gap-4">
           <a
             href="https://github.com/tomPlus353"
-            class="mr-3 text-slate-600 dark:text-slate-300"
+            class="inline-block px-5 py-2 bg-cyan-600 text-white font-semibold rounded-lg shadow-md hover:bg-cyan-700 transform hover:scale-105 transition-all duration-200"
             >GitHub</a
           >
           <a
             href="https://linkedin.com/in/tomas-sullivan"
-            class="mr-3 text-slate-600 dark:text-slate-300"
+            class="inline-block px-5 py-2 border border-slate-300 dark:border-slate-600 text-slate-800 dark:text-slate-50 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transform hover:scale-105 transition-all duration-200"
             >LinkedIn</a
           >
         </div>
